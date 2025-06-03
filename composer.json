@@ -1,0 +1,50 @@
+{
+  "name": "naveksoft/signature",
+  "description": "php client for signature",
+  "type": "library",
+  "version": "1.0.0",
+  "require": {
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.9",
+    "predis/predis": "^3.0",
+    "ext-sodium": "*",
+    "ext-redis": "*"
+  },
+  "require-dev": {
+    "elendev/composer-push": "^1.1"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Naveksoft\\Signature\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "pavel konoplyanikov",
+      "email": "p.konoplyanikov@naveksoft.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "elendev/composer-push": true
+    }
+  },
+  "extra": {
+    "push": {
+      "url": "https://download.aivp.io/repository/composer/",
+      "type": "nexus",
+      "ssl-verify": true,
+      "username": "uploader",
+      "password": "uploader1",
+      "ignore-by-git-attributes": true,
+      "ignore": [
+        "bitbucket-pipelines.yml"
+      ]
+    }
+  }
+}
