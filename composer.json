@@ -28,7 +28,7 @@
       "email": "p.konoplyanikov@naveksoft.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
     "allow-plugins": {
