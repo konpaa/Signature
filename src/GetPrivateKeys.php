@@ -2,14 +2,19 @@
 
 namespace Naveksoft\Signature;
 
-use Redis;
+use Predis\Client;
 
 class GetPrivateKeys
 {
-    public function getKeys(array $config, string $host, int $port): array
+    public function getKeys(array $config): array
     {
-        $redis = new Redis($config);
-        $redis->connect($host, $port);
-        return $redis->hGetAll('keys');
+        $client = new Client($config);
+        return $client->hgetall('keys');
+    }
+
+    public function setKeys(array $config, string $key, string $value): void
+    {
+        $client = new Client($config);
+        $client->hset('keys', $key, $value);
     }
 }
