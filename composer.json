@@ -34,18 +34,5 @@
     "allow-plugins": {
       "elendev/composer-push": true
     }
-  },
-  "extra": {
-    "push": {
-      "url": "https://download.aivp.io/repository/composer/",
-      "type": "nexus",
-      "ssl-verify": true,
-      "username": "uploader",
-      "password": "uploader1",
-      "ignore-by-git-attributes": true,
-      "ignore": [
-        "bitbucket-pipelines.yml"
-      ]
-    }
   }
 }
