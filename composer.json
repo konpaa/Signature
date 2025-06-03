@@ -1,7 +1,7 @@
 {
   "name": "naveksoft/signature",
   "description": "php client for signature",
-  "type": "library",
+  "type": "Library",
   "version": "1.0.0",
   "require": {
     "php": "^8.1",
