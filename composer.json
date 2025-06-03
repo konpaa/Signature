@@ -29,6 +29,7 @@
     }
   ],
   "minimum-stability": "stable",
+  "prefer-stable": true,
   "config": {
     "allow-plugins": {
       "elendev/composer-push": true
