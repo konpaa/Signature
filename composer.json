@@ -5,8 +5,7 @@
   "version": "1.0.0",
   "require": {
     "php": "^8.1",
-    "guzzlehttp/guzzle": "^7.9",
-    "predis/predis": "^3.0",
+    "predis/predis": "^3.3",
     "ext-sodium": "*",
     "ext-redis": "*"
   },
